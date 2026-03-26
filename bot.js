@@ -1,5 +1,6 @@
 const { Client, GatewayIntentBits } = require('discord.js');
-const mysql = require('mysql2/promise'); // Ajout pour la BDD
+const mysql = require('mysql2/promise'); // C'est cette ligne qui causait l'erreur car le module manquait
+// ... reste du code
 
 const CONFIG = {
     DISCORD_TOKEN: process.env.DISCORD_TOKEN || 'TON_BOT_TOKEN',
